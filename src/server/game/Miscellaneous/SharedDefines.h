@@ -4263,24 +4263,22 @@ enum RemoveMethod
     GROUP_REMOVEMETHOD_KICK_LFG = 3
 };
 
+/// 5.4.8 18414
 enum ActivateTaxiReply
-{
-    ERR_UNK_1                         = 0,
-    ERR_UNK_2                         = 1,
-    ERR_TAXI_SAME_NODE                = 2,  // You are already there!
-    ERR_TAXI_PLAYER_MOVING            = 3,  // You are moving!
-    ERR_TAXI_NOT_ENOUGH_MONEY         = 4,  // You don`t have enough money!
-    ERR_TAXI_UNSPECIFIED_SERVER_ERROR = 5,  // UNSPECIFIED TAXI SERVER ERROR
-    ERR_TAXI_NO_SUCH_PATH             = 6,  // There is no direct path to that destination!
-    ERR_TAXI_PLAYER_ALREADY_MOUNTED   = 7,  // You are already mounted! Dismount first!
-    ERR_TAXI_OK                       = 8,
-    ERR_TAXI_PLAYER_SHAPESHIFTED      = 9,  // You can`t take taxi while shapeshifted!
-    ERR_TAXI_PLAYER_BUSY              = 10, // You are busy and cant use the taxi service now!
-    ERR_TAXI_NOT_STANDING             = 11, // You need to be standing to go anywhere!
-    ERR_TAXI_NO_VENDOR_NEARBY         = 12, // There is no taxi vendor nearby!
-    ERR_TAXI_TOO_FAR_AWAY             = 13, // You are too far away from the taxi stand!
-    ERR_UNK_3                         = 14,
-    ERR_TAXI_NOT_VISITED              = 15, // You haven`t reached that taxi node on foot yet!
+{ 
+    ERR_TAXI_SAME_NODE                  = 2,
+    ERR_TAXI_PLAYER_MOVING              = 3,
+    ERR_TAXI_NOT_ENOUGH_MONEY           = 4,
+    ERR_TAXI_UNSPECIFIED_SERVER_ERROR   = 5,
+    ERR_TAXI_NO_SUCH_PATH               = 6,
+    ERR_TAXI_PLAYER_ALREADY_MOUNTED     = 7,
+    ERR_TAXI_OK                         = 8,
+    ERR_TAXI_PLAYER_SHAPESHIFTED        = 9,
+    ERR_TAXI_PLAYER_BUSY                = 10,
+    ERR_TAXI_NOT_STANDING               = 11,
+    ERR_TAXI_NO_VENDOR_NEARBY           = 12,
+    ERR_TAXI_TOO_FAR_AWAY               = 13,
+    ERR_TAXI_NOT_VISITED                = 15,
 };
 
 enum ProfessionUI
